@@ -3,6 +3,7 @@ database_engine = ${?WALLET_DAEMON_DATABASE_ENGINE}
 core_database_engine = "sqlite3"
 core_database_engine = ${?CORE_DATABASE_ENGINE}
 
+# Threads allocated per pool
 core = {
   ops_threads_factor = 4
   ops_threads_factor = ${?CORE_OPS_THREADS_FACTOR}
@@ -53,8 +54,6 @@ h2mem1 = {
   password=""
 }
 
-realtimeobservation = true
-
 synchronization = {
   initial_delay_in_seconds = 120
   interval_in_hours = 1
@@ -93,9 +92,6 @@ whitelist = [
 disable_whitelist = true
 
 core_data_path = "core_data"
-
-update_wallet_config = true
-update_wallet_config = ${?WALLET_UPDATE_WALLET_CONFIG}
 
 caching = {
     balance = {

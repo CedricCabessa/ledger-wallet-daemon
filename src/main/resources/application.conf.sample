@@ -113,7 +113,7 @@ explorer = {
         port = 443
         proxyuse = true
         proxyuse = ${?WALLET_DEFAULT_EXPLORER_PROXYUSE}
-        disable_sync_token = false
+        disable_sync_token = true
         disable_sync_token = ${?DEFAULT_DISABLE_SYNC_TOKEN}
       }
       {
@@ -126,7 +126,7 @@ explorer = {
         explorer_version = ${?WALLET_BTC_EXPLORER_VERSION}
         proxyuse = true
         proxyuse = ${?WALLET_BTC_EXPLORER_PROXYUSE}
-        disable_sync_token = false
+        disable_sync_token = true
         disable_sync_token = ${?BTC_DISABLE_SYNC_TOKEN}
       }
       {
@@ -139,7 +139,7 @@ explorer = {
         explorer_version = ${?WALLET_BTC_TESTNET_EXPLORER_VERSION}
         proxyuse = true
         proxyuse = ${?WALLET_BTC_TESTNET_EXPLORER_PROXYUSE}
-        disable_sync_token = false
+        disable_sync_token = true
         disable_sync_token = ${?BTC_TESTNET_DISABLE_SYNC_TOKEN}
       }
       {
@@ -154,7 +154,7 @@ explorer = {
         proxyuse = ${?WALLET_ETH_EXPLORER_PROXYUSE}
         fallback = "https://mainnet.infura.io/v3/c0c3514370b2454d9e58a001876167af"
         fallback = ${?WALLET_ETH_EXPLORER_FALLBACK}
-        disable_sync_token = false
+        disable_sync_token = true
         disable_sync_token = ${?ETH_DISABLE_SYNC_TOKEN}
       }
       {
@@ -167,7 +167,7 @@ explorer = {
         explorer_version = ${?WALLET_ETC_EXPLORER_VERSION}
         proxyuse = true
         proxyuse = ${?WALLET_ETC_EXPLORER_PROXYUSE}
-        disable_sync_token = false
+        disable_sync_token = true
         disable_sync_token = ${?ETC_DISABLE_SYNC_TOKEN}
       }
       {
@@ -182,7 +182,7 @@ explorer = {
         proxyuse = ${?WALLET_ETH_ROPSTEN_EXPLORER_PROXYUSE}
         fallback = "https://ropsten.infura.io/v3/c0c3514370b2454d9e58a001876167af"
         fallback = ${?WALLET_ETH_ROPSTEN_EXPLORER_FALLBACK}
-        disable_sync_token = false
+        disable_sync_token = true
         disable_sync_token = ${?ETH_ROPSTEN_DISABLE_SYNC_TOKEN}
       }
       {
@@ -193,7 +193,7 @@ explorer = {
         port = ${?WALLET_XRP_EXPLORER_PORT}
         proxyuse = true
         proxyuse = ${?WALLET_XRP_EXPLORER_PROXYUSE}
-        disable_sync_token = false
+        disable_sync_token = true
         disable_sync_token = ${?XRP_DISABLE_SYNC_TOKEN}
       }
       {
@@ -202,7 +202,7 @@ explorer = {
         host = ${?WALLET_XLM_EXPLORER_ENDPOINT}
         port = 443
         port = ${?WALLET_XLM_EXPLORER_PORT}
-        disable_sync_token = false
+        disable_sync_token = true
         disable_sync_token = ${?XLM_DISABLE_SYNC_TOKEN}
       }
     ]

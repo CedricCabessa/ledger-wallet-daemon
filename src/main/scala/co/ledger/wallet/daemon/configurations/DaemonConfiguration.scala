@@ -90,7 +90,7 @@ object DaemonConfiguration extends Logging {
   }
 
   val isWhiteListDisabled: Boolean = if (!config.hasPath("disable_whitelist")) false else config.getBoolean("disable_whitelist")
-  
+
   object Synchronization {
     val initialDelay = if (config.hasPath("synchronization.initial_delay_in_seconds")) {
       config.getInt("synchronization.initial_delay_in_seconds")

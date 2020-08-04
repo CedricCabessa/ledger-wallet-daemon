@@ -74,10 +74,7 @@ object DaemonCacheModule extends TwitterModule {
       val existingUser = Await.result(usersService.user(user._1), 1.minutes)
       if (existingUser.isEmpty) Await.result(usersService.createUser(user._1, user._2), 1.minutes)
     }
-
-    if (DaemonConfiguration.updateWalletConfig) {
-      Await.result(updateWalletConfig(), 5.minutes)
-    }
+    Await.result(updateWalletConfig(), 5.minutes)
     startSynchronization()
   }
 
